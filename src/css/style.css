@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: rgb(249, 252, 255); 
+    --foreground-color: rgb(2, 22, 48);
+    --primary-color: oklch(55.37% 0.19684 257.045);
+    --primary-foreground-color: rgb(249, 252, 255);
+    --secondary-color: oklch(0.68 0.18 250);
+    --muted-foreground-color: rgb(84, 101, 122);
+    --border-color: rgb(219, 230, 242);
+    --accent-color: oklch(0.94 0.04 250);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    border-bottom: 1px solid var(--border-color);
+    /* position: sticky;
+    top: 0; */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+
+    align-items: center;
+
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.header__icon {
+    width:  min(90%, 2.250rem);
+    height: min(90%, 2.250rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--primary-color);
+}
+
+.header__icon svg {
+    color: var(--primary-foreground-color);
+}
+
+.header__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--foreground-color);
+    font-family: Inter;
+}
+
+.header__navlist {
+    list-style: none;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.header__navlist-link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--muted-foreground-color);
+    font-family: Inter;
+    text-decoration: none;
+}
+
+.header__navlist-link:hover {
+    color: var(--foreground-color);
+}
+
+.header__button {
+    background-color: var(--primary-color);
+    color: var(--primary-foreground-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.header__button:hover {
+    background-color: var(--secondary-color);
+}
+

@@ -3,40 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Path2Dev</title>
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
         <div class="header__logo">
-          <svg
-            class="compass-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-compass-icon lucide-compass"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path
-              d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
-            />
-          </svg>
+          <div class="header__icon">
+            <svg
+              class="compass-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-compass-icon lucide-compass"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+              />
+            </svg>
+          </div>
           <span class="header__title">Path2Dev</span>
         </div>
 
-        <ul>
-          <li>How it works</li>
-          <li>Tracks</li>
-          <li>Projects</li>
+        <ul class="header__navlist">
+          <li>
+            <a href="#how-it-works" class="header__navlist-link"
+              >How it works</a
+            >
+          </li>
+          <li><a href="#tracks" class="header__navlist-link">Tracks</a></li>
+          <li><a href="#projects" class="header__navlist-link">Projects</a></li>
         </ul>
 
-        <button>Sign In</button>
+        <a class="header__button" href="#sign-in">Sign In</a>
       </nav>
     </header>
 
@@ -46,8 +53,8 @@
           <div class="tag">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="14"
+              height="14"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -75,12 +82,31 @@
           </p>
 
           <div class="hero__buttons">
-            <button>Explore tracks —></button>
-            <button>See how it works</button>
+            <a class="hero__button explore__button" href="#tracks">
+              <span>Explore tracks</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right-icon lucide-arrow-right"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a class="hero__button how-it-works-btn" href="#how-it-works"
+              >See how it works</a
+            >
           </div>
 
-          <div class="tags">
-            <div class="no-subscription-tag">
+          <div class="hero__tags">
+            <div class="no-subscription-tag hero__tag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -99,7 +125,7 @@
               <span>No subscription</span>
             </div>
 
-            <div class="structured-tracks-tag">
+            <div class="structured-tracks-tag hero__tag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -118,7 +144,7 @@
               <span>Structured tracks</span>
             </div>
 
-            <div class="hands-on-projects-tag">
+            <div class="hands-on-projects-tag hero__tag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -444,7 +470,10 @@
               />
             </svg>
             <h2>Ready to start your journey?</h2>
-            <p>Open Path2Dev and discover the clearest path to becoming a developer.</p>
+            <p>
+              Open Path2Dev and discover the clearest path to becoming a
+              developer.
+            </p>
             <a href="">Open Path2Dev —></a>
           </div>
         </div>
@@ -471,8 +500,10 @@
             />
           </svg>
           <span class="header__title">Path2Dev</span>
-        </div>        
-        <p class="footer_message">&copy; 2026 Path2Dev. Your compass for learning to code.</p>
+        </div>
+        <p class="footer_message">
+          &copy; 2026 Path2Dev. Your compass for learning to code.
+        </p>
       </footer>
     </main>
   </body>
