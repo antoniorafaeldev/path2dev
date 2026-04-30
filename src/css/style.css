@@ -12,7 +12,7 @@
     --foreground-color: rgb(2, 22, 48);
     --primary-color: oklch(55.37% 0.19684 257.045);
     --primary-foreground-color: rgb(249, 252, 255);
-    --secondary-color: oklch(0.68 0.18 250);
+    --secondary-color: oklch(64.254% 0.16404 249.119);
     --muted-foreground-color: rgb(84, 101, 122);
     --border-color: rgb(219, 230, 242);
     --accent-color: oklch(0.94 0.04 250);
@@ -104,3 +104,110 @@ html {
     background-color: var(--secondary-color);
 }
 
+.hero {
+    padding: 7rem 1.5rem;
+}
+
+.hero__content .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--accent-color);
+    color: var(--foreground-color);
+}
+
+.hero__content .tag span {
+    color: var(--foreground-color);
+    font-weight: 500;
+    font-family: Inter;
+    font-size: 0.875rem;
+}
+
+.hero__title {
+    font-size: 3.75rem;
+    font-family: Inter;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.hero__title strong {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.hero__description {
+    font-size: 1.125rem;
+    color: var(--muted-foreground-color);
+    font-family: Inter;
+    margin-bottom: 1.5rem;
+}
+
+.hero__buttons {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.explore__button {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-foreground-color);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: Geist;
+    transition: all 0.15s ease-in-out;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.explore__button:hover {
+    background-color: var(--secondary-color);
+}
+
+.how-it-works-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--muted-foreground-color-color);
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: Geist;
+    transition: all 0.15s ease-in-out;
+}
+
+.how-it-works-btn:hover {
+    background-color: var(--border-color);
+}
+
+.hero__tags {
+    display: flex;
+    gap: 1rem;
+}
+.hero__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;;
+}
+
+.hero__tag span {
+    color: var(--muted-foreground-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: Inter
+}
+
+.hero__tag svg {
+    color: var(--primary-color);
+
+}
