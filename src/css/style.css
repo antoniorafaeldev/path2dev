@@ -22,6 +22,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    background-color: var(--background-color);
+}
+
 .header {
     border-bottom: 1px solid var(--border-color);
     /* position: sticky;
@@ -106,6 +110,16 @@ html {
 
 .hero {
     padding: 7rem 1.5rem;
+    margin: 0 10.25rem;
+
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;;
+}
+
+.hero__content {
+    width: min(90%, 33rem);
 }
 
 .hero__content .tag {
@@ -177,7 +191,7 @@ html {
 .how-it-works-btn {
     background-color: transparent;
     border: 1px solid var(--border-color);
-    color: var(--muted-foreground-color-color);
+    color: var(--muted-foreground-color);
     text-decoration: none;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
@@ -210,4 +224,88 @@ html {
 .hero__tag svg {
     color: var(--primary-color);
 
+}
+
+.hero__image {
+    width: min(90%, 33rem);
+
+    border: 0.25rem solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+    padding: 2rem 0;
+}
+
+.hero__image svg {
+    color: var(--primary-color);
+}
+
+.why-path2dev {
+    padding: 7rem 1.5rem;
+    margin: 0 10.25rem;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 3rem;
+}
+
+.subtitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: Inter;
+    
+}
+
+.section__description {
+    margin-top: 0.75rem;
+    color: var(--muted-foreground-color);
+    font-family: Geist;
+}
+
+.division-block-box {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.division-block {
+    padding: 1.5rem;
+
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+
+}
+
+
+.division-block-icon{
+    margin-bottom: 1rem;
+
+    display: inline-flex;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--accent-color);
+}
+
+.division-block-icon svg {
+    color: var(--primary-color);
+}
+
+.division-block__title {
+    margin-bottom: 0.5rem;
+
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.division-block__subtitle {
+    color: var(--muted-foreground-color);
+    font-family: Geist;
 }
