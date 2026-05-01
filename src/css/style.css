@@ -11,7 +11,7 @@
     --background-color: rgb(249, 252, 255); 
     --foreground-color: rgb(2, 22, 48);
     --primary-color: oklch(55.37% 0.19684 257.045);
-    --primary-foreground-color: rgb(249, 252, 255);
+    --primary-foreground-color: oklab(95.934% -0.00648 -0.00071 );
     --secondary-color: oklch(64.254% 0.16404 249.119);
     --muted-foreground-color: rgb(84, 101, 122);
     --border-color: rgb(219, 230, 242);
@@ -122,7 +122,7 @@ main {
     width: min(90%, 33rem);
 }
 
-.hero__content .tag {
+.tag {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
@@ -277,7 +277,7 @@ main {
 .division-block {
     padding: 1.5rem;
 
-    background-color: transparent;
+    background-color: var(--background-color);
     border: 2px solid var(--border-color);
     border-radius: 1rem;
 
@@ -308,4 +308,16 @@ main {
 .division-block__subtitle {
     color: var(--muted-foreground-color);
     font-family: Geist;
+}
+
+.how-it-works {
+    background-color: var(--primary-foreground-color);
+    padding: 5rem;
+}
+
+.number {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: Inter;
+    color: var(--secondary-color);
 }
