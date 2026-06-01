@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    
+  .hero,
+  .why-path2dev,
+  .tracks,
+  .how-it-works,
+  .projects,
+  .access {
+    margin: 0;
+    padding: 2.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero__title {
+    font-size: 3rem;
+  }
+
+    .header,
+    .footer {
+        padding: 1rem 2rem;
+    }
+    
+    .header__navlist {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .hero__title, .subtitle, .section__description {
+        text-align: center;
+    }
+
+    .hero__description {
+        text-align: justify;
+    }
+
+    .division-block-box {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .access__content {
+        text-align: center;
+    }
+}
