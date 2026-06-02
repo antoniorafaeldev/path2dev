@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Trilha de Aprendizado - Design de Diretório Clean (Baseado na Imagem)
+   ========================================================================== */
+
+.learning-main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* --- Cabeçalho de Recursos da Trilha --- */
+.resource-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0 2rem 0;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.resource-header__main-info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.resource-header__icon-box {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(14, 165, 233, 0.08); /* Azul suave translúcido */
+  color: var(--primary-color);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resource-header__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-header__title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-family: Inter;
+  color: var(--foreground-color);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.resource-header__description {
+  font-size: 1.05rem;
+  color: var(--muted-foreground-color);
+  font-family: Geist;
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+.resource-header__badge {
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.resource-header__badge span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted-foreground-color);
+  font-family: Geist;
+}
+
+/* --- Subtítulo RESOURCES --- */
+.resources-section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted-foreground-color);
+  font-family: Inter;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* --- Grid de Recursos --- */
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* --- Card de Recurso --- */
+.resource-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(2, 22, 48, 0.015);
+}
+
+.resource-card:hover {
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(2, 22, 48, 0.04);
+}
+
+.resource-card__main {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.resource-card__icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+/* Cores dos ícones baseados no tipo do recurso */
+.resource-card__icon-box.text-icon {
+  background-color: rgba(14, 165, 233, 0.08); /* Azul */
+  color: var(--primary-color);
+}
+
+.resource-card__icon-box.video-icon {
+  background-color: rgba(239, 68, 68, 0.08); /* Vermelho */
+  color: #ef4444;
+}
+
+.resource-card__icon-box.book-icon {
+  background-color: rgba(16, 185, 129, 0.08); /* Verde */
+  color: #10b981;
+}
+
+.resource-card__icon-box.tool-icon {
+  background-color: rgba(245, 158, 11, 0.08); /* Laranja/Amarelo */
+  color: #f59e0b;
+}
+
+.resource-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--foreground-color);
+  font-family: Inter;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.resource-card__source {
+  font-size: 0.875rem;
+  color: var(--muted-foreground-color);
+  font-family: Geist;
+  margin-top: 0.15rem;
+}
+
+.resource-card__tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.resource-card__tag {
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  padding: 0.15rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted-foreground-color);
+  font-family: Geist;
+  transition: all 0.2s ease;
+}
+
+.resource-card:hover .resource-card__tag {
+  background-color: var(--accent-color);
+}
+
+.resource-card__external-icon {
+  align-self: flex-start;
+  color: var(--muted-foreground-color);
+  transition: color 0.2s ease, transform 0.2s ease;
+  margin-left: 1rem;
+  padding-top: 0.15rem;
+}
+
+.resource-card:hover .resource-card__external-icon {
+  color: var(--primary-color);
+  transform: translate(1px, -1px);
+}

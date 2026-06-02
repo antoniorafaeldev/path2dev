@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Trilha de Aprendizado - Responsividade (Baseado na Imagem)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .learning-main {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .learning-main {
+    padding: 2rem 1rem;
+  }
+
+  .resource-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .resource-header__main-info {
+    gap: 1rem;
+  }
+
+  .resource-header__icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .resource-header__title {
+    font-size: 1.75rem;
+  }
+
+  .resource-header__description {
+    font-size: 0.95rem;
+  }
+
+  .resource-header__badge {
+    align-self: flex-start;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .resource-card {
+    padding: 1.25rem;
+  }
+
+  .resource-card__main {
+    gap: 1rem;
+  }
+
+  .resource-card__icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .resource-card__title {
+    font-size: 1.05rem;
+  }
+
+  .resource-card__source {
+    font-size: 0.825rem;
+  }
+
+  .resource-card__tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
